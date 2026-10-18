@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بررسی اصل سن‌ونان و چالش‌های تمرکز تنش</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.0.0/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #3b82f6;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-light: #475569;
+        }
+
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0 0 1rem 0;
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: -3rem auto 3rem auto;
+            padding: 0 1.5rem;
+            display: grid;
+            gap: 2.5rem;
+            position: relative;
+        }
+
+        .method-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        .method-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .method-card h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+
+        .method-card h2::before {
+            content: "■";
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+        }
+
+        .method-card p {
+            color: var(--text-light);
+            font-size: 1.05rem;
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+
+        .highlight-box {
+            background-color: #eff6ff;
+            border-right: 4px solid var(--secondary-color);
+            padding: 1rem 1.5rem;
+            margin-top: 1.5rem;
+            border-radius: 8px 0 0 8px;
+            font-weight: 500;
+            color: var(--primary-color);
+            font-size: 0.95rem;
+            direction: rtl;
+        }
+
+        .math-symbol {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: var(--primary-color);
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            display: inline-block;
+            direction: ltr;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .image-card {
+            flex: 1 1 calc(50% - 1.5rem);
+            display: flex;
+            flex-direction: column;
+            background: #f1f5f9;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        /* استایل اصلاح شده برای جلوگیری از دفرمه شدن عکس‌ها */
+        .image-card img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+            border-bottom: 3px solid var(--secondary-color);
+            background-color: #fff;
+        }
+
+        .image-caption {
+            padding: 0.8rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            background-color: #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .method-card { padding: 1.5rem; }
+            .image-card { flex: 1 1 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>بررسی اصل سن‌ونان و چالش‌های تمرکز تنش در صنعت</h1>
+        <p>پژوهشگر: امیر مصطفی نعمت‌الهی</p>
+    </header>
+
+    <main class="container">
+        <!-- مقدمه -->
+        <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: justify;">
+            <p style="margin: 0; color: #475569;">
+                <strong>مقدمه:</strong> در کلاس‌های تئوری وقتی به اصل سن‌ونان یا معادلات کریش می‌رسیم، شرایط معمولاً ایده‌آل فرض می‌شود. مثلاً می‌گوییم اگر یک صفحه بی‌نهایت بزرگ داشته باشیم که وسط آن یک سوراخ دایره‌ای کوچک باشد، بیشترین تنش دقیقاً روی لبه‌ی سوراخ اتفاق می‌افتد و مقدار آن سه برابر تنش معمولی <span class="math-symbol">3σ</span> است. طبق این اصل، اگر فقط به اندازه دو برابر قطر سوراخ <span class="math-symbol">2D</span> از لبه فاصله بگیریم، اثر سوراخ عملاً میرا شده و توزیع تنش دوباره یکنواخت می‌شود. اما در صنعت و طراحی اجزای ماشین، اوضاع به این سادگی نیست و طراحان مجبورند با چالش‌های بسیار پیچیده‌تری دست‌وپنجه نرم کنند. بیایید ببینیم چرا این قانون سرانگشتی در واقعیت همیشه جواب نمی‌دهد:
+            </p>
+        </div>
+
+        <!-- بخش اول -->
+        <section class="method-card">
+            <h2>۱. محدودیت ابعاد و اثر لبه‌ها (Finite Width Effect)</h2>
+            <p>
+                اولین چالش این است که در واقعیت صنعتی، قطعه‌ی «بی‌نهایت بزرگ» وجود ندارد! وقتی اندازه سوراخ نسبت به عرض قطعه خیلی کوچک نباشد، خطوط انتقال تنش هنگام عبور از کنار سوراخ جای کافی برای باز شدن ندارند و به لبه‌های بیرونی قطعه فشرده می‌شوند.
+            </p>
+            <p>
+                در این حالت، میدان تنش به مرزهای قطعه برخورد می‌کند و این یعنی اثر تمرکز تنش خیلی دیرتر از آن فاصله‌ی <span class="math-symbol">2D</span> از بین می‌رود. به همین دلیل مهندسان برای محاسبه دقیق ضریب تمرکز تنش <span class="math-symbol">Kt</span> به جای فرمول‌های تئوری، سراغ نمودارهای تجربی استانداردی مثل نمودارهای پترسون (Peterson's Charts) می‌روند.
+            </p>
+
+            <div class="image-gallery">
+                <div class="image-card">
+                    <img src="theory-hole.jpg" alt="توزیع تنش دور سوراخ">
+                    <div class="image-caption">افت سریع تنش در اطراف سوراخ در یک صفحه بی‌نهایت (تئوری الاستیسیته)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- بخش دوم -->
+        <section class="method-card">
+            <h2>۲. حساسیت به شیار و بارگذاری خستگی (Notch Sensitivity)</h2>
+            <p>
+                قانون افت تنش در فاصله <span class="math-symbol">2D</span> بیشتر برای بارهای استاتیک و مواد کاملاً الاستیک صادق است. در دنیای واقعی، قطعات ماشین مدام در معرض ارتعاشات و بارگذاری‌های رفت‌وبرگشتی (خستگی) قرار دارند. 
+            </p>
+            <p>
+                در اینجا جنس قطعه نقش اول را بازی می‌کند. مثلاً یک سوراخ کوچک در فولاد تُرد، بسیار خطرناک‌تر و حساس‌تر از همان سوراخ در یک آلیاژ نرم و چقرمه است. بنابراین در طراحی صنعتی، ضریب تمرکز تنش استاتیک کنار می‌رود و ضریب تمرکز تنش خستگی <span class="math-symbol">Kf</span> که تابعی از حساسیت جنس ماده است، وارد معادلات می‌شود.
+            </p>
+        </section>
+
+        <!-- بخش سوم -->
+        <section class="method-card">
+            <h2>۳. تداخل نواحی تمرکز تنش (Multiple Stress Raisers)</h2>
+            <p>
+                در ماشین‌آلات صنعتی به ندرت با قطعه‌ای مواجه می‌شویم که فقط یک سوراخ ساده داشته باشد. قطعات معمولاً پر از رزوه، جای خار، شعاع گوشه (Fillet) یا سوراخ‌های مختلفی هستند که خیلی وقت‌ها نزدیک به هم قرار گرفته‌اند. 
+            </p>
+            <p>
+                وقتی این عوارض هندسی به هم نزدیک باشند، میدان‌های تنش آن‌ها با هم ترکیب می‌شود و یک تمرکز تنش مرکب و غیرخطیِ وحشتناک می‌سازد. در این شرایط، معادلات کلاسیک تک‌سوراخه به هیچ‌وجه نمی‌توانند شدت این تنش ترکیبی را پیش‌بینی کنند.
+            </p>
+
+            <div class="image-gallery">
+                <div class="image-card">
+                    <img src="industry-hole.jpg" alt="تداخل نواحی تمرکز تنش در نرم افزار">
+                    <div class="image-caption">خروجی نرم‌افزار FEA: تداخل میدان‌های تنش در حضور سوراخ‌های متعدد و مرزهای محدود</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- بخش چهارم -->
+        <section class="method-card">
+            <h2>۴. تسلیم موضعی و بازتوزیع تنش (Local Yielding)</h2>
+            <p>
+                رفتار مواد هم در توزیع تنش بسیار تعیین‌کننده است. اگر جنس قطعه نرم و شکل‌پذیر باشد، به محض اینکه تنش روی لبه‌ی سوراخ از حد تسلیم ماده فراتر برود، آن لبه وارد ناحیه پلاستیک می‌شود. 
+            </p>
+            <p>
+                این رفتار الاستوپلاستیک باعث می‌شود بافت اطراف سوراخ تغییر شکل داده و تنش در اطراف آن بازتوزیع شود. در نتیجه، گرادیان افت تنش کاملاً با آن چیزی که تئوری خطی الاستیسیته می‌گوید متفاوت خواهد شد و قانون فاصله دو برابر قطر به کل اعتبارش را از دست می‌دهد.
+            </p>
+        </section>
+
+        <!-- نتیجه‌گیری -->
+        <div class="highlight-box" style="margin-bottom: 2rem;">
+            <strong>جمع‌بندی صنعتی:</strong> به خاطر همین چالش‌هاست که در واقعیتِ مهندسی و طراحی اجزا، نمی‌توان به تقریب‌های ساده‌سازی‌شده بسنده کرد. طراحان امروزه از ترکیب نرم‌افزارهای قدرتمند تحلیل المان محدود (مثل سالیدورکس، انسیس یا آباکوس) و هندبوک‌های تجربی استفاده می‌کنند تا ضریب اطمینان قطعه را به طور کامل تضمین کنند.
+        </div>
+    </main>
+
+    <footer>
+       <p>تهیه شده برای درس طراحی اجزا / مباحث پیشرفته تحلیل تنش</p>
+    </footer>
+
+</body>
+</html>
